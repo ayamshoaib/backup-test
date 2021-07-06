@@ -1,0 +1,17 @@
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: backup-test
+  namespace: velero
+
+spec:
+  includedNamespaces:
+  - 'ic-incorta-991'
+  includedResources:
+  - '*'
+  excludedResources:
+  - 'pvc'
+  includeClusterResources: null
+  storageLocation: default
+  snapshotVolumes: false
+  ttl: 1h0m0s
