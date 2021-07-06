@@ -6,7 +6,7 @@ metadata:
 
 spec:
   includedNamespaces:
-  - 'ic-incorta-991'
+  - 'ic-incorta-argo'
   includedResources:
   - '*'
   excludedResources:
