@@ -1,17 +1,14 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: backup-test
+  name: ic-something-BACKUP-20210725-133901
   namespace: velero
-
 spec:
+  excludedResources:
+  - pvc
   includedNamespaces:
-  - 'ic-incorta-argo'
+  - ic-something
   includedResources:
   - '*'
-  excludedResources:
-  - 'pvc'
-  includeClusterResources: null
   storageLocation: default
-  snapshotVolumes: false
-  ttl: 1h0m0s
+  ttl: 24h0m0s
