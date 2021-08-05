@@ -1,13 +1,13 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-something-BACKUP-20210805-110751
+  name: ic-kilanytry7-BACKUP-20210805-124230
   namespace: velero
 spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-something
+  - ic-kilanytry7
   includedResources:
   - '*'
   storageLocation: default
