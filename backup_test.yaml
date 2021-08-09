@@ -1,14 +1,14 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-kilanytry7-BACKUP-20210805-131244
+  name: LOL-BACKUP
   namespace: velero
 spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-kilanytry7
+  - LOL
   includedResources:
   - '*'
   storageLocation: default
-  ttl: 24h0m0s
+  ttl: 72h0m0s
