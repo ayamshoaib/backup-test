@@ -1,1 +1,15 @@
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-ayavelerotest-BACKUP
+  namespace: velero
+spec:
+  excludedResources:
+  - pvc
+  includedNamespaces:
+  - ic-ayavelerotest
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 72h0m0s
 
