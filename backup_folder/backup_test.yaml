@@ -1,15 +1,14 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-ayavelerotest-BACKUP
+  name: ic-meow10-BACKUP
   namespace: velero
 spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-ayavelerotest
+  - ic-meow10
   includedResources:
   - '*'
   storageLocation: default
   ttl: 72h0m0s
-
