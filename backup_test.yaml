@@ -1,14 +1,14 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-ayavelerotest-BACKUP
+  name: ic-something-BACKUP-20210822-214351
   namespace: velero
 spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-ayavelerotest
+  - ic-something
   includedResources:
   - '*'
   storageLocation: default
-  ttl: 72h0m0s
+  ttl: 24h0m0s
