@@ -1,13 +1,13 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-ayavelerotest-BACKUP
+  name: ic-incorta-argo-BACKUP
   namespace: velero
 spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-ayavelerotest
+  - ic-incorta-argo
   includedResources:
   - '*'
   storageLocation: default
