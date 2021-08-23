@@ -1,13 +1,13 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-meow10-backup
+  name: ic-meow8-backup
   namespace: velero
 spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-meow10
+  - ic-meow8
   includedResources:
   - '*'
   storageLocation: default
