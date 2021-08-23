@@ -1,7 +1,7 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-meow10-BACKUP
+  name: ic-meow10-backup
   namespace: velero
 spec:
   excludedResources:
