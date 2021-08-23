@@ -1,13 +1,13 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-my-clust-backup
+  name: ic-new-clus-01-backup
   namespace: velero
 spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-my-clust
+  - ic-new-clus-01
   includedResources:
   - '*'
   storageLocation: default
