@@ -1,13 +1,13 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-aug19v2-stg-backup
+  name: ic-tst20210302-backup
   namespace: velero
 spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-aug19v2-stg
+  - ic-tst20210302
   includedResources:
   - '*'
   storageLocation: default
