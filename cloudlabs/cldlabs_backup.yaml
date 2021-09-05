@@ -1,13 +1,13 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-incorta-trial-11-backup
+  name: ic-ayatestingvelero-backup
   namespace: velero
 spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-incorta-trial-11
+  - ic-ayatestingvelero
   includedResources:
   - '*'
   storageLocation: default
