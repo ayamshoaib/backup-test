@@ -1,1 +1,14 @@
-creating a file for the backup
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-ayatestingsth13-backup
+  namespace: velero
+spec:
+  excludedResources:
+  - pvc
+  includedNamespaces:
+  - ic-ayatestingsth13
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 48h0m0s
