@@ -11,4 +11,4 @@ spec:
   includedResources:
   - '*'
   storageLocation: default
-  ttl: 48h0m0s
+  ttl: 72h0m0s
