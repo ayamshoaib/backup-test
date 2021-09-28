@@ -7,7 +7,7 @@ spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-ayatestingsth13g
+  - fake_ns
   includedResources:
   - '*'
   storageLocation: default
