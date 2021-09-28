@@ -1,0 +1,14 @@
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-ayaistiredofvelero-backup
+  namespace: velero
+spec:
+  excludedResources:
+  - pvc
+  includedNamespaces:
+  - ic-ayaistiredofvelero
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 48h0m0s
