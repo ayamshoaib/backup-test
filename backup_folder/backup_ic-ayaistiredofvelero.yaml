@@ -7,7 +7,7 @@ spec:
   excludedResources:
   - pvc
   includedNamespaces:
-  - ic-ayaistiredofvelero
+  - fakens
   includedResources:
   - '*'
   storageLocation: default
