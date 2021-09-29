@@ -1,0 +1,14 @@
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-ayasnewcluster-backup
+  namespace: velero
+spec:
+  excludedResources:
+  - pvc
+  includedNamespaces:
+  - ic-ayasnewcluster
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 72h0m0s
