@@ -1,7 +1,7 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-tentest-backup-20211018-111430
+  name: ic-tentest-backup-20211019-114056
   namespace: velero
 spec:
   includedNamespaces:
@@ -9,4 +9,4 @@ spec:
   includedResources:
   - '*'
   storageLocation: default
-  ttl: 24h0m0s
+  ttl: 72h0m0s
