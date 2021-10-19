@@ -1,1 +1,12 @@
-creating a file for the backup
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-velero-demo-backup-20211019-113137
+  namespace: velero
+spec:
+  includedNamespaces:
+  - ic-velero-demo
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 24h0m0s
