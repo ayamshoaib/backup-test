@@ -1,1 +1,12 @@
-creating a file for the backup
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-ayatestingdn3-backup-20211124-211625
+  namespace: velero
+spec:
+  includedNamespaces:
+  - ic-ayatestingdn3
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 24h0m0s
