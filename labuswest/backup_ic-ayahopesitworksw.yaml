@@ -1,1 +1,12 @@
-creating a file for the backup
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-ayahopesitworksw-backup-l2121212-121212
+  namespace: velero
+spec:
+  includedNamespaces:
+  - ic-ayahopesitworksw
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 24h0m0s
