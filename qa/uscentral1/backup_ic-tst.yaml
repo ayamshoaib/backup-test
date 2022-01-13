@@ -1,1 +1,12 @@
-creating a file for the backup
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-tst-backup-20220113-163500
+  namespace: velero
+spec:
+  includedNamespaces:
+  - ic-tst
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 24h0m0s
