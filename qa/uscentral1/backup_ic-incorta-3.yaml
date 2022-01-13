@@ -1,1 +1,12 @@
-creating a file for the backup
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-incorta-3-backup-20220113-151521
+  namespace: velero
+spec:
+  includedNamespaces:
+  - ic-incorta-3
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 48h0m0s
