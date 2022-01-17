@@ -1,7 +1,7 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-tst-backup-20220117-163500
+  name: ic-tst-backup-20220116-163500
   namespace: velero
 spec:
   includedNamespaces:
