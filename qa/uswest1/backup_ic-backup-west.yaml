@@ -1,1 +1,12 @@
-creating a file for the backup
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-backup-west-backup-20220118-081000
+  namespace: velero
+spec:
+  includedNamespaces:
+  - ic-backup-west
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 72h0m0s
