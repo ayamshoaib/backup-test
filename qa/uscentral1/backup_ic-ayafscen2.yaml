@@ -1,1 +1,12 @@
-creating a file for the backup
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-ayafscen2-backup-20220124-233408
+  namespace: velero
+spec:
+  includedNamespaces:
+  - ic-ayafscen2
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 72h0m0s
