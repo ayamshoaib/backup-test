@@ -1,7 +1,7 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: ic-ayafscen2-backup-20220126-083039
+  name: ic-ayafscen2-backup-20220126-104909
   namespace: velero
 spec:
   includedNamespaces:
@@ -9,4 +9,4 @@ spec:
   includedResources:
   - '*'
   storageLocation: default
-  ttl: 24h0m0s
+  ttl: 72h0m0s
