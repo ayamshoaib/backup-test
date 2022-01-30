@@ -1,1 +1,12 @@
-creating a file for the backup
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ic-shams-backup-20220130-101939
+  namespace: velero
+spec:
+  includedNamespaces:
+  - ic-shams
+  includedResources:
+  - '*'
+  storageLocation: default
+  ttl: 48h0m0s
